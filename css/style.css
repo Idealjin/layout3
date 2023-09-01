@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+
+.layout{
+    width: 100%;
+    height: 100%;
+
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    width: 300px;
+    height: 60px;
+    flex: 1;
+    overflow: hidden;
+    padding: 20px 50px;
+}
+
+.header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.header .menu{
+    flex: 4;
+    text-align: center;
+    position: relative;
+}
+
+.menu-span{
+    padding-top: 40px;
+    position: absolute;
+    left: 2%;
+    font-size: 20px;
+}
+
+.menu-span span{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.menu-span span:nth-last-of-type(1){
+    margin-right: 0;
+}
+
+.header .contact{
+    flex: 1;
+    position: relative;
+}
+
+.contact-button{
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    position: absolute;
+    top: 30%;
+    border-style: none;
+    cursor: pointer;
+}
+
+.request{
+    left: 10%;
+    background: rgba(0, 0, 173, 0.48);
+    color: white;
+}
+
+.tel-button{
+    font-size: 12px;
+    right: 15%;
+    cursor: pointer;
+    border: 1px solid orange;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.slide-wrap{
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to left, dodgerblue 70%, orange 70%);
+    border: 2px solid black;
+    position: relative;
+}
+
+.slide-wrap .gray-bg{
+    width: 100%;
+    height: 150px;
+    background: white;
+}
+
+.slide-images{
+    width: 7000px;
+    height: 400px;
+    padding: 0 50px;
+    position: relative;
+    top: -168px;
+    border: 1px solid crimson;
+    overflow: hidden;
+}
+
+.slide-images img{
+    width: 1800px;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.slide-images img:first-child{
+    right: 1800px;
+}
+
+.slide-images img:last-child{
+    right: 3600px;
+}
+
+.slide-button-bg{
+    width: 300px;
+    height: 50px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 415px;
+}
+
+.slide-button{
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    font-size: 20px;
+    color: gray;
+}
+
+.slide-button span{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.slide-arrow{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: gray;
+}
+
+.slide-arrow .left{
+    position: absolute;
+    top: 30%;
+}
+
+.slide-arrow .right{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
