@@ -15,7 +15,6 @@ ul{
 .layout{
     width: 100%;
     height: 100%;
-
 }
 
 .header{
@@ -65,6 +64,8 @@ ul{
 .header .contact{
     flex: 1;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact-button{
@@ -99,7 +100,7 @@ ul{
     width: 100%;
     height: 450px;
     background: linear-gradient(to left, dodgerblue 70%, orange 70%);
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     position: relative;
 }
 
@@ -107,32 +108,35 @@ ul{
     width: 100%;
     height: 150px;
     background: white;
-}
-
-.slide-images{
-    width: 7000px;
-    height: 400px;
-    padding: 0 50px;
-    position: relative;
-    top: -168px;
-    border: 1px solid crimson;
-    overflow: hidden;
-}
-
-.slide-images img{
-    width: 1800px;
-    height: 100%;
-    object-fit: cover;
     position: absolute;
     top: 0;
 }
 
-.slide-images img:first-child{
-    right: 1800px;
+.slide-box{
+    width: 95%;
+    height: 400px;
+    overflow: hidden;
+    position:  relative;
+    margin-left: 50px;
+    z-index: 5;
 }
 
-.slide-images img:last-child{
-    right: 3600px;
+.slide-images{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    position: absolute;
+    top: -18px;
+    transition: 1.2s;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-images li img{
+    width: 1850px;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid black;
 }
 
 .slide-button-bg{
